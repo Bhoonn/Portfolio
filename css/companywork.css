@@ -41,3 +41,64 @@ main {
     bottom: -10px;
     z-index: -1;
 }
+
+#companies_container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#companies_container ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#companies_container ul > li {
+    width: 300px;
+    min-height: 300px;
+    list-style: none;
+    background-color: rgb(43,43,43);
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: bottom-to-top 1s;
+}
+
+#companies_container ul > li > a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(33,33,33);
+    background-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#companies_container ul > li > a::before {
+    content: "";
+    position: absolute;
+}
+
+#companies_container ul > li > h3 {
+    padding: 10px;
+    align-self: center;
+}
+
+#companies_container ul > li > p {
+    padding: 10px;
+    padding-top: 0;
+    overflow-wrap: break-word;
+}
+
+#companies_container ul > li a > img {
+    width: 200px;
+    height: 200px;
+}
