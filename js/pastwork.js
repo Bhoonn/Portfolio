@@ -1,6 +1,7 @@
 const RightImages = document.getElementsByClassName("work_right")
 
 const Images = [
+    "",
     "images/pw1.gif",
     "images/pw2.gif",
     "images/pw3.gif",
